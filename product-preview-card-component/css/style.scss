@@ -1,0 +1,178 @@
+@import './variables';
+
+@mixin mobile {
+    @media (max-width: 640px) {
+        flex-direction: column; 
+        transform: scale(.6);
+        .left {
+            background-image: url(../images/image-product-mobile.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 600px;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .right {
+            height: 589px;
+            position: relative;
+            left: -15px;
+            .title {
+                transform: scale(1.5);
+            }
+            .header {
+                transform: scale(1.5);
+                font-size: 2.4rem;
+                width: 360px;
+                position: relative;
+                top: 25px;
+                line-height: 1;
+            }
+            .sub-text {
+                color: $dark-grayish-blue;
+                width: 296px;
+                transform: scale(1.8);
+                position: relative;
+                top: 72px;
+                margin-bottom: 20px;
+            }
+            .price {
+                position: relative;
+                top: 128px;
+                transform: scale(2);
+                left: 32px;
+            }
+            .button {
+                position: relative;
+                top: 168px;
+                display: flex;
+                align-items: center;
+                transform: scale(1.8);
+                padding: 15px 85px;
+                
+                span {
+                    font-size: 1rem;
+                }
+
+                .cart-icon {
+                    margin-top: 0;
+                    position: relative;
+                    transform: scale(1.1);
+                    top: -1px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+@mixin desktop {
+    @media (min-width:640px){
+        .left {
+            background-image: url(../images/image-product-desktop.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+body {
+    
+    background-color: hsl(30, 38%, 92%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: auto;
+    background-color: $white;
+    border-radius: 10px;
+    .left {
+        width: 300px;
+        height: 450px;
+    }        
+    .right {
+        width: 300px;
+        height: 450px;
+        margin-left: 30px;
+        .title {
+            color: $dark-grayish-blue;
+            margin-top: 35px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-weight: 400;
+            margin-left: -36px;
+            transform: scale(.8);
+        }
+        .header {
+            transform: scale(.8);
+            font-family: 'Fraunces', serif;
+            font-size: 2.4rem;
+            margin-left: -32px;
+            width: 260px;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+        .sub-text {
+            color: $dark-grayish-blue;
+            width: 246px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .price {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .current-price {
+            color: $button-color;
+            font-weight: 700;
+            font-size: 2rem;
+            font-family: 'Fraunces', serif;
+            display: inline;
+        }
+
+        .old-price {
+            display: inline;
+            margin-left: 20px;
+            color: $dark-grayish-blue;
+            text-decoration: line-through;
+        }
+        .button {
+            font-family: 'Montserrat', sans-serif;;
+            background-color: $button-color;
+            border: 0;
+            padding: 15px 65px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            color: $white;
+            &:hover {
+                background-color: darken($color: $button-color, $amount: 15);
+            }
+
+            .cart-icon {
+                margin-top: 15px;
+                position: relative;
+                top: 3px;
+                margin-right: 5px;
+            }
+        }
+    }
+    @include mobile;
+    @include desktop;
+}

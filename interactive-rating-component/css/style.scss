@@ -1,0 +1,168 @@
+@import "variables";
+@import "resets";
+
+@mixin media {
+  @media (max-width: 640px) {
+    transform: scale(0.7);
+    .desc {
+      width: 85%;
+    }
+  }
+}
+
+@mixin body-media {
+  @media (max-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+body {
+  @include body-media;
+  background-color: $very-dark-blue;
+  color: $white;
+  font-family: "Overpass", sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ratingCard {
+  @include media;
+  .card-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 105px 25px 25px 25px;
+    height: 350px;
+
+    img {
+      width: 38px;
+      background-color: rgba(124, 135, 152, 0.2);
+      padding: 10px;
+      border-radius: 50%;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    .desc {
+      color: $medium-grey;
+      font-weight: font-weights(regular);
+      line-height: 1.5em;
+    }
+
+    .rating {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 0;
+
+      #ratingForm {
+        input[type="radio"] {
+          margin: 0 5px;
+          width: 4rem;
+          height: 4rem;
+          appearance: none;
+          background-color: rgba(124, 135, 152, 0.2);
+          color: $white;
+          border-radius: 50%;
+          transition: 0.3s;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $primary;
+          }
+
+          &:checked {
+            background-color: $light-grey;
+          }
+        }
+
+        label {
+          user-select: none;
+          position: relative;
+          top: -45px;
+          left: 30px;
+        }
+      }
+    }
+
+    .submit {
+      background-color: $primary;
+      border: 0;
+      border-radius: 24px;
+      padding: 12px 0;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+      margin: 0 0 15px 0;
+      color: $white;
+      letter-spacing: 0.2rem;
+      font-weight: font-weights(bold);
+      width: 100%;
+      &:hover {
+        transition: 0.7s ease-in-out;
+        background-color: $white;
+        color: $primary;
+      }
+    }
+  }
+}
+
+.card {
+  width: 400px;
+  height: 405px;
+  background-color: $dark-blue;
+  border-radius: 24px;
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.resultCard {
+  visibility: hidden;
+  position: relative;
+  top: -350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  img {
+    width: 35%;
+  }
+
+  .given {
+    color: $primary;
+    background-color: rgba(124, 135, 152, 0.2);
+    padding: 0.3em 1em;
+    border-radius: 25px;
+  }
+  .title {
+    position: relative;
+    top: -0.1em;
+  }
+
+  .desc {
+    position: relative;
+    top: -1.7em;
+    width: 89%;
+    color: $medium-grey;
+    font-weight: font-weights(bold);
+    text-align: center;
+  }
+}
+
+.notVisible {
+  visibility: hidden;
+}
+
+.Visible {
+  visibility: visible;
+}

@@ -1,0 +1,51 @@
+@import 'variables';
+@import 'resets';
+
+body {
+    background: $bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    height: 100vh;
+    .main {
+        background-color: $content-bg;
+        padding: 12px;
+        height: 390px;
+        border-radius: 15px;
+        box-shadow: 0 15px 15px rgba(123, 135, 157,0.2);
+        margin: 6em;
+        .qr {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 221px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+        }
+        .all-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;            
+            flex-direction: column;
+            h1 {
+                color: $dark-blue;
+                text-align: center;
+                font-size: 1.2rem;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            h3 {
+                color: $grayish-blue;
+                text-align: center;
+                font-size: .8rem;
+                width: 220px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+body {
+  background-color: hsl(216deg, 12%, 8%);
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Overpass", sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .ratingCard {
+    transform: scale(0.7);
+  }
+  .ratingCard .desc {
+    width: 85%;
+  }
+}
+.ratingCard .card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 105px 25px 25px 25px;
+  height: 350px;
+}
+.ratingCard .card-wrapper img {
+  width: 38px;
+  background-color: rgba(124, 135, 152, 0.2);
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+.ratingCard .card-wrapper h1 {
+  margin-bottom: 1rem;
+}
+.ratingCard .card-wrapper .desc {
+  color: hsl(216deg, 12%, 54%);
+  font-weight: 400;
+  line-height: 1.5em;
+}
+.ratingCard .card-wrapper .rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+.ratingCard .card-wrapper .rating #ratingForm input[type=radio] {
+  margin: 0 5px;
+  width: 4rem;
+  height: 4rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: rgba(124, 135, 152, 0.2);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.ratingCard .card-wrapper .rating #ratingForm input[type=radio]:hover {
+  background-color: hsl(25deg, 97%, 53%);
+}
+.ratingCard .card-wrapper .rating #ratingForm input[type=radio]:checked {
+  background-color: hsl(217deg, 12%, 63%);
+}
+.ratingCard .card-wrapper .rating #ratingForm label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  top: -45px;
+  left: 30px;
+}
+.ratingCard .card-wrapper .submit {
+  background-color: hsl(25deg, 97%, 53%);
+  border: 0;
+  border-radius: 24px;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  margin: 0 0 15px 0;
+  color: hsl(0deg, 0%, 100%);
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  width: 100%;
+}
+.ratingCard .card-wrapper .submit:hover {
+  transition: 0.7s ease-in-out;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+
+.card {
+  width: 400px;
+  height: 405px;
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 24px;
+}
+.card h1 {
+  font-size: 2rem;
+}
+
+.resultCard {
+  visibility: hidden;
+  position: relative;
+  top: -350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.resultCard img {
+  width: 35%;
+}
+.resultCard .given {
+  color: hsl(25deg, 97%, 53%);
+  background-color: rgba(124, 135, 152, 0.2);
+  padding: 0.3em 1em;
+  border-radius: 25px;
+}
+.resultCard .title {
+  position: relative;
+  top: -0.1em;
+}
+.resultCard .desc {
+  position: relative;
+  top: -1.7em;
+  width: 89%;
+  color: hsl(216deg, 12%, 54%);
+  font-weight: 700;
+  text-align: center;
+}
+
+.notVisible {
+  visibility: hidden;
+}
+
+.Visible {
+  visibility: visible;
+}/*# sourceMappingURL=style.css.map */

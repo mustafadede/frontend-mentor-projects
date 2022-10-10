@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(185deg, 75%, 39%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 14px;
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: -350px -520px, 650px 350px;
+  overflow: hidden;
+}
+@media (max-width: 640px) {
+  body {
+    background-position: -751px -625px, 117px 350px;
+  }
+}
+
+.card {
+  box-shadow: 0 25px 50px rgba(2, 2, 2, 0.2);
+  transform: scale(1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  margin: 60px 25px 25px 25px;
+  border-radius: 15px;
+  background-color: white;
+  z-index: 0;
+}
+@media (max-width: 640px) {
+  .card {
+    margin: 0;
+    transform: scale(0.9);
+  }
+}
+.card .photo-background {
+  width: 350px;
+  height: 140px;
+  background-image: url(../images/bg-pattern-card.svg);
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  z-index: 0;
+  position: absolute;
+  top: -6em;
+}
+.card .face-pic {
+  background-image: url(../images/image-victor.jpg);
+  width: 96px;
+  height: 96px;
+  z-index: 99;
+  border: 6px solid white;
+  border-radius: 50%;
+}
+.card .card-title {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.card .card-title .name {
+  font-weight: 700;
+}
+.card .card-title .age {
+  color: hsl(227deg, 10%, 46%);
+}
+.card .card-title .location {
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: hsl(227deg, 10%, 46%);
+  margin-top: 0.8em;
+}
+.card .line {
+  width: 24rem;
+  height: 0.11rem;
+  background-color: hsl(0deg, 0%, 59%);
+  opacity: 0.2;
+}
+.card .stats {
+  margin-top: 2rem;
+  display: flex;
+  font-size: 1.1rem;
+  transform: scale(0.9);
+}
+.card .stats .stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.card .stats .stat .title {
+  font-weight: 700;
+}
+.card .stats .stat .desc {
+  margin-top: 0.2em;
+  color: hsl(0deg, 0%, 59%);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+.card .stats .stat:nth-child(1) {
+  padding-right: 4rem;
+}
+.card .stats .stat:nth-child(3) {
+  padding-left: 4rem;
+}/*# sourceMappingURL=style.css.map */
