@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here](https://www.frontendmentor.io/solutions/interactive-rating-component-with-sass-SyfQR1Q45)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/nft-preview-card-component-1iEtlrBtkq)
 - Live Site URL: [Click here](https://mustafadede.github.io/nft-preview-card-component)
 
 ## My process
