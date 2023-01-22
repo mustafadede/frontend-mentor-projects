@@ -1,0 +1,137 @@
+* {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(217deg, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.card {
+  box-shadow: 0 24px 24px hsl(217deg, 54%, 11%);
+  border-radius: 10px;
+  width: 300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(216deg, 50%, 16%);
+  padding-top: 27px;
+}
+.card .card__info {
+  width: 270px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0;
+}
+.card .card__info--photo {
+  border-radius: 50%;
+  border: 2px solid hsl(0deg, 0%, 100%);
+  width: 30px;
+  height: 30px;
+}
+.card .card__info--text {
+  color: hsl(215deg, 51%, 70%);
+  margin-left: 10px;
+}
+.card .card__info--text .name {
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+.card .card__info--text .name:hover {
+  color: hwb(178 0% 0%);
+}
+
+.text {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.text .text__header {
+  font-size: 18px;
+  color: hsl(0deg, 0%, 100%);
+  margin: 10px 0;
+}
+.text .text__header:hover {
+  color: hwb(178 0% 0%);
+  cursor: pointer;
+}
+.text .text__sub {
+  margin-bottom: 10px;
+  color: hsl(215deg, 51%, 70%);
+  width: 270px;
+}
+
+.stats {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.stats .stats__money {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 20px;
+  color: hwb(178 0% 0%);
+}
+.stats .stats__money--info {
+  font-size: 14px;
+}
+.stats .stats__info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-right: 20px;
+  color: hsl(215deg, 51%, 70%);
+  font-size: 16px;
+}
+.stats .stats__info--info {
+  font-size: 14px;
+}
+
+.line {
+  margin: 20px 0;
+  border-top: 1.5px solid hsl(215deg, 32%, 27%);
+}
+
+.card__image {
+  position: relative;
+  width: 270px;
+}
+.card__image .card__image--photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.card__image .card__image--overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  background-color: rgba(0, 255, 247, 0.5);
+  top: 0;
+}
+
+.card__image:hover .card__image--overlay {
+  cursor: pointer;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
