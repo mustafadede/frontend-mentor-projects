@@ -1,0 +1,107 @@
+@import "reset";
+@import "variables";
+
+.wrapper {
+    margin:64px;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+
+        .links {
+            a {
+                margin-left: 24px;
+                color: $Very-dark-blue;
+            }
+        }
+    }
+
+    .main {
+        margin-top: 24px;
+        display: flex;
+        .spotlight {
+            flex-grow: 2;
+            &__wrapper {
+                margin-top: 24px;
+                display: flex;
+                justify-content: space-between;
+                h1 {
+                    font-size: 3.5rem;
+                    width: 350px;   
+                    font-weight: 800;
+                }
+
+                &--info {
+                    width: 400px;
+                    p {
+                        line-height: 1.5;
+                        font-size: 1.2rem;
+                        margin-bottom: 3rem;
+                    }
+
+                    a {
+                        background-color: $soft-red;
+                        color: $Off-white;
+                        padding: 15px 34px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+
+        .trends {
+            flex-grow: 1;
+            margin-left: 45px;
+            background-color: $Very-dark-blue;
+            padding: 24px;
+            h2 {
+                color: $soft-orange;
+                font-size: 3rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+                color: $Off-white;
+                margin-top: 24px;
+            }
+            p {
+                color: $Grayish-blue;
+                margin: 12px 0 24px 0;
+                line-height: 1.7;
+            }
+        }
+    }
+
+    .hotnews {
+        margin-top: 4rem;
+        display: flex;
+        .wrapper {
+            display: flex;
+            margin: 0;
+
+            &__info {
+                display: block;
+                margin: 0 24px;
+                .number {
+                    font-size: 2.5rem;
+                    color: $Grayish-blue;
+                    font-weight: 700;
+                }
+
+                .header {
+                    margin-top: 1rem;
+                    font-weight: 800;
+                }
+
+                .info {
+                    margin-top: 1rem;
+                    width: 230px;
+                    color: $Dark-grayish-blue;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
+

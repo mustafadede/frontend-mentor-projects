@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+* a {
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 64px;
+}
+.wrapper .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .navbar .links a {
+  margin-left: 24px;
+  color: hsl(240deg, 100%, 5%);
+}
+.wrapper .main {
+  margin-top: 24px;
+  display: flex;
+}
+.wrapper .main .spotlight {
+  flex-grow: 2;
+}
+.wrapper .main .spotlight__wrapper {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .main .spotlight__wrapper h1 {
+  font-size: 3.5rem;
+  width: 350px;
+  font-weight: 800;
+}
+.wrapper .main .spotlight__wrapper--info {
+  width: 400px;
+}
+.wrapper .main .spotlight__wrapper--info p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+.wrapper .main .spotlight__wrapper--info a {
+  background-color: hsl(5deg, 85%, 63%);
+  color: hsl(36deg, 100%, 99%);
+  padding: 15px 34px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.wrapper .main .trends {
+  flex-grow: 1;
+  margin-left: 45px;
+  background-color: hsl(240deg, 100%, 5%);
+  padding: 24px;
+}
+.wrapper .main .trends h2 {
+  color: hsl(35deg, 77%, 62%);
+  font-size: 3rem;
+}
+.wrapper .main .trends h3 {
+  font-size: 1.5rem;
+  color: hsl(36deg, 100%, 99%);
+  margin-top: 24px;
+}
+.wrapper .main .trends p {
+  color: hsl(233deg, 8%, 79%);
+  margin: 12px 0 24px 0;
+  line-height: 1.7;
+}
+.wrapper .hotnews {
+  margin-top: 4rem;
+  display: flex;
+}
+.wrapper .hotnews .wrapper {
+  display: flex;
+  margin: 0;
+}
+.wrapper .hotnews .wrapper__info {
+  display: block;
+  margin: 0 24px;
+}
+.wrapper .hotnews .wrapper__info .number {
+  font-size: 2.5rem;
+  color: hsl(233deg, 8%, 79%);
+  font-weight: 700;
+}
+.wrapper .hotnews .wrapper__info .header {
+  margin-top: 1rem;
+  font-weight: 800;
+}
+.wrapper .hotnews .wrapper__info .info {
+  margin-top: 1rem;
+  width: 230px;
+  color: hsl(236deg, 13%, 42%);
+  line-height: 1.5;
+}
+
+/*# sourceMappingURL=style.css.map */
