@@ -1,0 +1,121 @@
+@mixin mobile {
+    @media (max-width: 640px) {
+        .menu__wrapper {
+            .menu__card {
+                z-index: 2;
+                position: fixed;
+                right: 0;
+                top: 0;
+                width: 70%;
+                height: 100vh;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                img {
+                    width: 34px;
+                    position: absolute;
+                    right: 0;
+                    margin: 24px;
+                    top: 0;
+                }
+
+                .links {
+                    margin-top: 178px;
+                    margin-left: 34px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 2em;
+
+                    a {
+                        font-size: 1.5rem;
+                        color: $Very-dark-blue;
+                    }
+                }
+            }
+    
+            .backdrop {
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                padding: 0;
+                width: 100vw;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.468);
+            }
+        }
+
+        margin: 24px;
+        .navbar {
+            display: flex;
+            justify-content: center;
+            .links {
+                display: none;
+            }
+
+            .menu {
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+
+
+            }
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+
+            .spotlight {
+                .spotlight__wrapper {
+                    display: flex;
+                    flex-direction: column;
+
+                    h1 {
+                        font-size: 2.5rem;
+                        width: 260px;
+                    }
+
+                    .spotlight__wrapper--info {
+                        margin-top: 10px;
+                        width: 340px;
+                    }
+                }
+            }
+
+            .trends {
+                margin-top: 5rem;
+                padding-bottom: 10px !important;
+                .trends__wrapper {
+                    display: block;
+                    .box {
+                        width: 290px;
+                        h3 {
+                            font-size: 1.3rem;
+                        }
+                    }
+                    .box:not(:nth-child(1)) {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        .hotnews {
+            display: flex;
+            flex-direction: column;
+            gap: 45px;
+
+            .wrapper__info {
+                .number {
+                    font-size: 2rem !important;
+                }
+                .header {
+                    font-size: 1rem !important;
+                }
+            }
+        }
+    }
+}

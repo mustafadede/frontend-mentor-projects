@@ -13,6 +13,19 @@
   </head>
   <body>
     <div class="wrapper">
+      <div class="menu__wrapper">
+        <div class="menu__card">  
+          <img src="./assets/images/icon-menu-close.svg" alt="menu close icon" class="menu__close">
+          <div class="links">
+            <a href="#">Home</a>
+            <a href="#">New</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categories</a>
+          </div>
+        </div>
+        <div class="backdrop"></div>
+      </div>
       <div class="navbar">
         <div class="logo"><img src="./assets/images/logo.svg" alt="logo" width="50" /></div>
         <div class="links">
@@ -21,6 +34,9 @@
           <a href="#">Popular</a>
           <a href="#">Trending</a>
           <a href="#">Categories</a>
+        </div>
+        <div class="menu">
+          <img src="./assets/images/icon-menu.svg" alt="menu icon">
         </div>
       </div>
       <div class="main">
@@ -39,19 +55,31 @@
         </div>
         <aside class="trends">
           <h2>New</h2>
-          <h3>Hydrogen VS Electric Cars</h3>
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-          <hr />
-          <h3>The Downsides of AI Artistry</h3>
-          <p>What are the possible adverse effects of on-demand AI image generation?</p>
-          <hr />
-          <h3>Is VC Funding Drying Up?</h3>
-          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          <div class="trends__wrapper">
+            <div class="box">
+              <h3>Hydrogen VS Electric Cars</h3>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+            <hr />
+            <div class="box">
+              <h3>The Downsides of AI Artistry</h3>
+              <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            </div>
+            <hr />
+            <div class="box">
+              <h3>Is VC Funding Drying Up?</h3>
+              <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+          </div>
+
+          
+          
+          
         </aside>
       </div>
       <div class="hotnews">
         <div class="wrapper">
-          <img src="./assets/images/image-retro-pcs.jpg" alt="" width="25%">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="" width="25%" />
           <div class="wrapper__info">
             <p class="number">01</p>
             <p class="header">Reviving Retro PCs</p>
@@ -59,7 +87,7 @@
           </div>
         </div>
         <div class="wrapper">
-          <img src="./assets/images/image-top-laptops.jpg" alt="" width="25%">
+          <img src="./assets/images/image-top-laptops.jpg" alt="" width="25%" />
           <div class="wrapper__info">
             <p class="number">02</p>
             <p class="header">Top 10 Laptops of 2022</p>
@@ -67,7 +95,7 @@
           </div>
         </div>
         <div class="wrapper">
-          <img src="./assets/images/image-gaming-growth.jpg" alt="" width="25%">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="" width="25%" />
           <div class="wrapper__info">
             <p class="number">03</p>
             <p class="header">The Growth of Gaming</p>
@@ -76,5 +104,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

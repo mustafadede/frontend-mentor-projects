@@ -1,8 +1,16 @@
 @import "reset";
 @import "variables";
-
+@import "mobile";
+@import "tablet";
 .wrapper {
+    .menu__wrapper {
+        display: none;
+    }
+    @include tablet;
+    @include mobile;
     margin:64px;
+
+
 
     .navbar {
         display: flex;
@@ -13,6 +21,10 @@
                 margin-left: 24px;
                 color: $Very-dark-blue;
             }
+        }
+
+        .menu {
+            display: none;
         }
     }
 
