@@ -41,7 +41,11 @@
       </div>
       <div class="main">
         <div class="spotlight">
-          <img src="./assets/images/image-web-3-desktop.jpg" alt="web image" width="100%" />
+          <picture>
+            <source media="(min-width: 650px)" srcset="./assets/images/image-web-3-desktop.jpg"></source>
+            <source media="(min-width: 465px)" srcset="./assets/images/image-web-3-mobile.jpg"></source>
+            <img src="./assets/images/image-web-3-desktop.jpg" alt="" width="100%">
+          </picture>
           <div class="spotlight__wrapper">
             <h1>The Bright Future of Web 3.0?</h1>
             <div class="spotlight__wrapper--info">

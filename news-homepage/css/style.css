@@ -243,6 +243,9 @@
   display: flex;
   margin: 0;
 }
+.wrapper .hotnews .wrapper img {
+  object-fit: contain;
+}
 .wrapper .hotnews .wrapper__info {
   display: block;
   margin: 0 24px;
